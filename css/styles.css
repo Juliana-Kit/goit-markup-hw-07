@@ -73,7 +73,7 @@ img{
     color: var(--title-color);
 }
 
-.page-header__container{
+.container{
     /* width: 1200px; */
     margin: 0 auto;
     
@@ -134,7 +134,6 @@ img{
 
 
 .page-header__list{
-
     display: flex;
 }
 
@@ -182,60 +181,48 @@ img{
 
 .page-header__link:hover,
 .page-header__link:focus,
-.conection-link:hover,
-.conection-link:focus{
+.conection__link:hover,
+.conection__link:focus{
     color:var(--accent-color);
 }
 
 
-.page-header__conection{
+.conection{
     margin-left: auto;
-    /* padding: 32px 0; */
     display:flex;
     align-items: center;
 
 }
 
-.conection > .conection-item + .conection-item{
+.conection__item:not(:first-child){
     margin-left: 50px;
 
 }
 
-/* .conection-item{
-    
-    display: flex;
-    align-items:center;
-    justify-content: center;
-} */
 
-.conection-item{
+.conection__item{
     display: block;
     align-items: center;
     justify-content: center;
 }
 
 
-/* .icon-link-header{
-    width: 100%;
-    height: 100%;
-    fill: #757575;
-} */
 
 
 
 
-.icon-conection{
+.conection__icon{
     margin-right: 10px;
     fill: currentColor;
 }
 
-.icon-conection:hover,
-.icon-conection:focus{
+.conection__icon:hover,
+.conection__icon:focus{
     fill: var(--accent-color);
 }
 
 
-.conection-link{
+.conection__link{
     /* transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
@@ -1031,7 +1018,7 @@ address{
 
 }
 
-.filters-item:not(:first-child){
+.filters-list__item:not(:first-child){
    margin-left: 8px;
 }
 
@@ -1075,7 +1062,7 @@ address{
     /* outline:teal solid 2px; */
 }
 
-.project-item{
+.project-list__item{
     transition: box-shadow 250ms var(--timing-function);
     flex-basis: calc(100% / 3 - 60px);
 
@@ -1085,21 +1072,21 @@ address{
 }
 
 
-.project-item:hover {
+.project-list__item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-item:hover .project-overlay{
+.project-list__item:hover .project-list__overlay{
     transform: translateY(0);
     opacity: 1;
 }
 
-.project-thumb{
+.project-list__thumb{
     position: relative;
     overflow: hidden;
 }
 
-.project-overlay{
+.project-list__overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -1114,7 +1101,7 @@ address{
 
 }
 
-.project-text-link{
+.project-list__content{
     position: absolute;
     
     top: 50%;
@@ -1133,10 +1120,6 @@ address{
 }
 
 
-
-
-
-
 .card-content{
     padding: 24px 20px;
     border-right:1px solid #EEEEEE; 
@@ -1144,7 +1127,7 @@ address{
     border-left: 1px solid #EEEEEE;
 }
 
-.title-project{
+.project-list__title{
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -1155,7 +1138,7 @@ address{
     color: var(--title-color);
 }
 
-.text-project{
+.project-list__text{
     font-size: 16px;
     line-height: 1.88;
 

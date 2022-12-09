@@ -21,24 +21,24 @@
     <!-- Header -->
     <header class="page-header">
       <div class="container page-header__main-container">
-        <a href="./index.html" class="page-header__logo">
-          <span class="page-header__logo-accent">Web</span>Studio</a
+        <a href="./index.html" class="logo page-header__logo">
+          <span class="logo--accent">Web</span>Studio</a
         >
 
         <nav class="page-header__nav">
-          <ul class="page-header__list list">
-            <li class="page-header__item">
-              <a href="./index.html" class="page-header__link">Студия</a>
+          <ul class="menu__list list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__link">Студия</a>
             </li>
-            <li class="page-header__item">
+            <li class="menu__item">
               <a
                 href="./portfolio.html"
-                class="page-header__link page-header__link--current page-header__link--underline"
+                class="menu__link menu__link--current menu__link--underline"
                 >Портфолио</a
               >
             </li>
-            <li class="page-header__item">
-              <a href="" class="page-header__link">Контакты</a>
+            <li class="menu__item">
+              <a href="" class="menu__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -63,6 +63,7 @@
         </ul>
       </div>
     </header>
+
     <main>
       <section class="section-exampeles">
         <div class="container">
@@ -314,26 +315,26 @@
     </main>
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <footer class="footer">
       <div class="container footer-left-part">
         <div class="footer-container">
-          <a href="./index.html" class="logo">
-            <span class="accent">Web</span>Studio</a
+          <a href="./index.html" class="logo footer__logo">
+            <span class="logo--accent">Web</span>Studio</a
           >
-          <address>
-            <ul class="footer list">
-              <li class="contact-item">
-                <a href="" class="address-link">
+          <address class="contact">
+            <ul class="contact__list list">
+              <li class="contact__item">
+                <a href="" class="contact__link contact__link--address">
                   г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="contact-item">
-                <a href="mailto:info@example.com" class="contact-link"
+              <li class="contact__item">
+                <a href="mailto:info@example.com" class="contact__link"
                   >info@example.com</a
                 >
               </li>
-              <li class="contact-item">
-                <a href="tel:+380991111111" class="contact-link"
+              <li class="contact__item">
+                <a href="tel:+380991111111" class="contact__link"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -342,32 +343,32 @@
         </div>
 
         <div class="join">
-          <h2 class="title-join">присоединяйтесь</h2>
-          <ul class="join-list list">
-            <li class="join-item">
-              <a href="" class="join-icon-link">
-                <svg class="join-icon" width="20" height="20">
+          <h2 class="join__title">присоединяйтесь</h2>
+          <ul class="join__list list">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a href="" class="join-icon-link">
-                <svg class="join-icon" width="20" height="20">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a href="" class="join-icon-link">
-                <svg class="join-icon" width="20" height="20">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="join-item">
-              <a href="" class="join-icon-link">
-                <svg class="join-icon" width="20" height="20">
+            <li class="join__item">
+              <a href="" class="join__link">
+                <svg class="join__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -375,17 +376,20 @@
           </ul>
         </div>
         <div class="footer-form">
-          <label for="distribution">Подпишитесь на рассылку</label>
-          <div class="follow">
+          <label for="distribution" class="footer-form__label"
+            >Подпишитесь на рассылку</label
+          >
+          <div class="footer-form__content">
             <input
               type="email"
               name="distribution"
               id="distribution"
               placeholder="E-mail"
+              class="footer-form__input"
             />
-            <button type="submit" class="telegram-btn">
+            <button type="submit" class="footer-form__btn">
               Подписаться
-              <svg class="icon-telegram-form" width="24" height="24">
+              <svg class="footer-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#telegram-form"></use>
               </svg>
             </button>

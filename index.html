@@ -23,7 +23,7 @@
     <header class="page-header">
       <div class="container page-header__main-container">
         <a href="./index.html" class="page-header__logo">
-          <span class="page-header__logo-accent">Web</span>Studio</a
+          <span class="page-header__logo--accent">Web</span>Studio</a
         >
 
         <nav class="page-header__nav">
@@ -422,22 +422,22 @@
       <div class="container footer-left-part">
         <div class="footer-container">
           <a href="./index.html" class="footer__logo">
-            <span class="logo--accent">Web</span>Studio</a
+            <span class="footer__logo--accent">Web</span>Studio</a
           >
           <address class="contact">
             <ul class="contact__list list">
               <li class="contact__item">
-                <a href="" class="contact__link--address">
+                <a href="" class="contact__link contact__link--address">
                   г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="contact-item">
-                <a href="mailto:info@example.com" class="contact-link"
+              <li class="contact__item">
+                <a href="mailto:info@example.com" class="contact__link"
                   >info@example.com</a
                 >
               </li>
-              <li class="contact-item">
-                <a href="tel:+380991111111" class="contact-link"
+              <li class="contact__item">
+                <a href="tel:+380991111111" class="contact__link"
                   >+38 099 111 11 11</a
                 >
               </li>
@@ -479,13 +479,16 @@
           </ul>
         </div>
         <div class="footer-form">
-          <label for="footer-form__lable">Подпишитесь на рассылку</label>
+          <label for="distribution" class="footer-form__label"
+            >Подпишитесь на рассылку</label
+          >
           <div class="footer-form__div">
             <input
               type="email"
               name="distribution"
               id="distribution"
               placeholder="E-mail"
+              class="footer-form__input"
             />
             <button type="submit" class="footer-form__btn">
               Подписаться
@@ -498,10 +501,11 @@
       </div>
     </footer>
 
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-btn" data-modal-close>
-          <svg class="icon-close" width="18" height="18">
+        <button class="modal__btn" data-modal-close>
+          <svg class="modal__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-btn-close"></use>
           </svg>
         </button>

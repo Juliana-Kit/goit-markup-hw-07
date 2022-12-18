@@ -37,21 +37,14 @@
 }
 
 .hero__button {
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
-    letter-spacing: 0.06em;
-    cursor: pointer;
-
+    @include font(inherit,700,16px,30px,0.06em);
+    @include btn(var(--accent-color),4px,transparent,pointer);
+    
     color: #ffffff;
-    background-color: var(--accent-color);
-
+    
     display: block;
-    padding: 8px 30px;
     min-width: 200px;
-    border-radius: 4px;
-    border-color: transparent;
 
+    padding: 8px 30px;
     margin: 0 auto;
 }

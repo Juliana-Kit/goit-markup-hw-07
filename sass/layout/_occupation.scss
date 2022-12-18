@@ -7,9 +7,7 @@
     margin: 0;
     padding: 0;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+    @include font(inherit,700,36px,42px);
     text-align: center;
 
     color: var(--title-color);
@@ -19,12 +17,12 @@
     margin-bottom: 50px;
 }
 
-.occupation__list {
+.occupation-list {
     display: flex;
 }
 
 
-.occupation__item {
+.occupation-list__item {
     position: relative;
     display: block;
         &:not(:first-child) {
@@ -50,7 +48,7 @@
 
 
 
-.occupation__text {
+.occupation-list__text {
     position: absolute;
 
     font-weight: 700;

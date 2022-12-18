@@ -2,9 +2,9 @@
     margin: 0 auto;
     padding: 0;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+
+    @include font(inherit,700,36px,42px,00.03em);
+
     text-align: center;
 
     color: var(--title-color);

@@ -1,8 +1,4 @@
-.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
+
 
 .backdrop {
     position: fixed;
@@ -19,13 +15,7 @@
 
 
 
-.backdrop--is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.backdrop.backdrop--is-hidden .modal {
+.backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.9);
 }
 
@@ -57,9 +47,7 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include align();
 }
 
 .modal__icon {
@@ -73,9 +61,7 @@
 
 
 .modal__direction {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: calc(23/20);
+    @include font(inherit,700,20px,23px);
     text-align: center;
     color: var(--title-color);
     margin: 0 auto;
@@ -172,12 +158,11 @@
 } */
 
 .clause {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include align();
     margin-bottom: 0;
     padding-top: 20px;
     padding-bottom: 30px;
+    
 
 
     font-size: 14px;
@@ -186,16 +171,19 @@
     color: var(--text-color);
 }
 
-.clause__check-icon {
-
+.clause__border {
     width: 16px;
     height: 15px;
-    border: 2px solid #212121;
     border-radius: 2px;
-    margin-right: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 2px solid #212121;
+    margin-right: 8px;
+
+    @include align();
+}
+
+.checkbox:checked + .clause__border{
+    background-color: var(--accent-color);
+    border: none;
 }
 
 .checkbox__visually-hidden {
@@ -207,11 +195,6 @@
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
-}
-
-.checkbox:checked + .clause__icon {
-    border: none;
-    background-color: var(--accent-color);
 }
 
 
